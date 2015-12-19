@@ -91,7 +91,6 @@ RUN cd /linux-kernel && \
 
 # Remove useless kernel modules, based on unclejack/debian2docker
 RUN cd $ROOTFS/lib/modules && \
-    rm -rf ./*/kernel/sound/* && \
     rm -rf ./*/kernel/drivers/gpu/* && \
     rm -rf ./*/kernel/drivers/infiniband/* && \
     rm -rf ./*/kernel/drivers/isdn/* && \
